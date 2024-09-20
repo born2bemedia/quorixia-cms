@@ -40,6 +40,9 @@
     },
     "seo_description": {
       "type": "text"
+    },
+    "excerpt": {
+      "type": "text"
     }
   }
 }

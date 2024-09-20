@@ -885,6 +885,7 @@ export interface ApiPostPost extends Schema.CollectionType {
     image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     seo_title: Attribute.String;
     seo_description: Attribute.Text;
+    excerpt: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
