@@ -770,13 +770,14 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'manyToOne',
       'plugin::users-permissions.role'
     >;
-    name: Attribute.String;
+    firstName: Attribute.String;
     phone: Attribute.String;
     orders: Attribute.Relation<
       'plugin::users-permissions.user',
       'oneToMany',
       'api::order.order'
     >;
+    lastName: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -910,10 +911,11 @@ export interface ApiProductProduct extends Schema.CollectionType {
   attributes: {
     title: Attribute.String & Attribute.Required;
     price: Attribute.Integer;
-    Category: Attribute.Enumeration<['hr', 'employment']>;
     slug: Attribute.UID<'api::product.product', 'title'> & Attribute.Required;
     description: Attribute.Text;
     for_request: Attribute.Boolean & Attribute.DefaultTo<false>;
+    category: Attribute.Enumeration<['hr', 'employment', 'package']>;
+    includes: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

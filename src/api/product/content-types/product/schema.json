@@ -19,13 +19,6 @@
     "price": {
       "type": "integer"
     },
-    "Category": {
-      "type": "enumeration",
-      "enum": [
-        "hr",
-        "employment"
-      ]
-    },
     "slug": {
       "type": "uid",
       "targetField": "title",
@@ -37,6 +30,17 @@
     "for_request": {
       "type": "boolean",
       "default": false
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "hr",
+        "employment",
+        "package"
+      ]
+    },
+    "includes": {
+      "type": "richtext"
     }
   }
 }
