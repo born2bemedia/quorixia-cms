@@ -79,6 +79,24 @@
     },
     "lastName": {
       "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "zip": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
     }
   }
 }

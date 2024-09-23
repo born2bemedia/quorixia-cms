@@ -778,6 +778,12 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'api::order.order'
     >;
     lastName: Attribute.String;
+    street: Attribute.String;
+    address: Attribute.String;
+    city: Attribute.String;
+    state: Attribute.String;
+    zip: Attribute.String;
+    country: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
