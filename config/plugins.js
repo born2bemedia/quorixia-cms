@@ -10,7 +10,7 @@ module.exports = ({ env }) => ({
             user: env('SMTP_USERNAME'),
             pass: env('SMTP_PASSWORD'),
           },
-          secure: false,
+          secure: env('SMTP_SECURE', 587),
         },
         settings: {
           defaultFrom: 'noreply@quorixia.com',
