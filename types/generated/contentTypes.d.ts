@@ -852,6 +852,7 @@ export interface ApiOrderOrder extends Schema.CollectionType {
       'api::product.product'
     >;
     additional: Attribute.String;
+    files: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
